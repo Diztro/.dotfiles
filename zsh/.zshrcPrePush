@@ -1,0 +1,22 @@
+export PATH="/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin"
+
+PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
+export PATH="~/Workspace/scripts/src/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
+
+source $HOME/.aliases
+# source $HOME/.env
+
+# source $HOME/.dotfiles/zsh/.zshrcFunctions
+
+# Replace git alias with hub (It's totally safe!)
+eval "$(hub alias -s)"
+
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH=$(brew --prefix)/share/python:$(brew --prefix)/share/python/bin:$(brew --prefix)/share/python/sbin:$PATH
+
+export NVM_DIR="/Users/dangamble/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
